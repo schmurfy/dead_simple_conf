@@ -2,7 +2,11 @@ require "bundler/gem_tasks"
 
 task :test do
   require 'bacon'
-  ENV['COVERAGE'] = "1"
+  
+  # do not generate coverage report from travis
+  unless ENV['TRAVIS']
+    ENV['COVERAGE'] = "1"
+  end
   
   # Bacon.summary_on_exit
   
