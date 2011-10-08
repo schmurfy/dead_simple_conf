@@ -6,7 +6,7 @@ too complicated.
 I decided to extract this code in a proper gem when I got tired of copying it over
 and over in my projects.
 
-# Continuous integration ([![Build Status](https://secure.travis-ci.org/schmurfy/dead_simple_conf.png)]())
+# Continuous integration ([![Build Status](https://secure.travis-ci.org/schmurfy/dead_simple_conf.png)](http://travis-ci.org/schmurfy/dead_simple_conf))
 
 This gem is tested against these ruby by travis-ci.org:
 
