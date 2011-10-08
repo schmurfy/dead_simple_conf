@@ -1,0 +1,11 @@
+
+logger:
+  level: debug
+  output: /tmp/file.log
+
+app:
+  data_path: /tmp
+  
+  server:
+    port: 9000
+    address: 127.0.0.1
