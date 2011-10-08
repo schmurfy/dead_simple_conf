@@ -6,6 +6,13 @@ too complicated.
 I decided to extract this code in a proper gem when I got tired of copying it over
 and over in my projects.
 
+# Continuous integration ([![Build Status](https://secure.travis-ci.org/schmurfy/dead_simple_conf.png)]())
+
+This gem is tested against these ruby by travis-ci.org:
+
+- mri 1.9.2
+- mri 1.8.7
+
 # What this gem provides
 
 My requirements for a config parser are:
