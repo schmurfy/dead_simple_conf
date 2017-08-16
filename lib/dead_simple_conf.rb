@@ -12,6 +12,15 @@ module DeadSimpleConf
       end
     end
     
+    def self.sub_array(name, klass)
+      attr_reader(name)
+      
+      define_method("#{name}=") do |arr|
+        res = arr.map{|itm| klass.new(itm) }
+        instance_variable_set("@#{name}", res)
+      end
+    end
+    
     def initialize(attributes)
       _load_data(attributes)
     end
